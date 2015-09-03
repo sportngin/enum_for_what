@@ -6,7 +6,7 @@ module ActiveRecord
       # Add enumeration support for schema statement creation. This
       # will have to be adapted for every adapter if the type requires
       # anything by a list of allowed values. The overrides the standard
-      # type_to_sql method and chains back to the default. This could 
+      # type_to_sql method and chains back to the default. This could
       # be done on a per adapter basis, but is generalized here.
       #
       # will generate enum('a', 'b', 'c') for :limit => [:a, :b, :c]

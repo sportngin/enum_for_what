@@ -4,16 +4,16 @@
 
 # try rails 3.1, then rails 3.2+, mysql column adapters
 column_class = if defined? ActiveRecord::ConnectionAdapters::Mysql2Column
-  ActiveRecord::ConnectionAdapters::Mysql2Column
-elsif defined? ActiveRecord::ConnectionAdapters::MysqlColumn
-  ActiveRecord::ConnectionAdapters::MysqlColumn
-elsif defined? ActiveRecord::ConnectionAdapters::Mysql2Adapter::Column
-  ActiveRecord::ConnectionAdapters::Mysql2Adapter::Column
-elsif defined? ActiveRecord::ConnectionAdapters::MysqlAdapter::Column
-  ActiveRecord::ConnectionAdapters::MysqlAdapter::Column
-else
-  ObviousHint::NoMysqlAdapterFound
-end
+                 ActiveRecord::ConnectionAdapters::Mysql2Column
+               elsif defined? ActiveRecord::ConnectionAdapters::MysqlColumn
+                 ActiveRecord::ConnectionAdapters::MysqlColumn
+               elsif defined? ActiveRecord::ConnectionAdapters::Mysql2Adapter::Column
+                 ActiveRecord::ConnectionAdapters::Mysql2Adapter::Column
+               elsif defined? ActiveRecord::ConnectionAdapters::MysqlAdapter::Column
+                 ActiveRecord::ConnectionAdapters::MysqlAdapter::Column
+               else
+                 ObviousHint::NoMysqlAdapterFound
+               end
 
 column_class.class_eval do
 
@@ -75,7 +75,7 @@ column_class.class_eval do
     end
   end
 
-private
+  private
 
   # Deprecated in Rails 4.2
   if private_instance_methods.include?(:simplified_type)

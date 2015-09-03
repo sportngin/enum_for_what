@@ -16,13 +16,13 @@ if defined? ActiveRecord::Type::Value
 
         private
 
-          def cast_value(value)
-            if value.nil? || value == ''
-              nil
-            else
-              value.to_sym
-            end
+        def cast_value(value)
+          if value.nil? || value == ''
+            nil
+          else
+            value.to_sym
           end
+        end
       end
     end
   end
