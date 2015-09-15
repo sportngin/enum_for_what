@@ -3,7 +3,7 @@
 This gem is an extension to ActiveRecord which enables native support of enumerations in the database schema using the ENUM type in MySQL.
 
 Originally forked from [eletronick/enum_column][1] with several enhancements written and curated from the unenumerable forks of this
-gem (see what I did there?) with love by [Sport Ngin][2].
+gem (see what I did there?) with love by [Sport Ngin][2] - including support from Rails 3.2 up to 4.2.
 
 Supported adapters:
 - mysql
