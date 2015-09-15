@@ -1,4 +1,5 @@
 # Enum For What!
+[![Gem Version](https://badge.fury.io/rb/enum_for_what.svg)](http://badge.fury.io/rb/enum_for_what)
 
 This gem is an extension to ActiveRecord which enables native support of enumerations in the database schema using the ENUM type in MySQL.
 
